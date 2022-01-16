@@ -1,0 +1,39 @@
+% Following command is used to created grouped signature line for Four Authors
+\newcommand*\wildcard[2][6cm]{\vspace{2cm}\parbox{#1}{\hrulefill\par#2}} 
+
+% A "parbox{}{}" is a box whose contents are created in paragraph mode. 
+% "hrulefill{} to chance thickness of underline"
+
+\section*{Declaration}
+
+It is hereby declared that
+
+\begin{enumerate} % begin{enumerate} function to create numbered list
+  \item The thesis submitted is my/our own original work while completing degree at Brac University.
+  \item The thesis does not contain material previously published or written by a third party, except where this is appropriately cited through full and accurate referencing.
+  \item The thesis does not contain material which has been accepted, or submitted, for any other degree or diploma at a university or other institution.
+  \item We have acknowledged all main sources of help.
+\end{enumerate}
+
+\vspace{1cm}
+\textbf{Student’s Full Name \& Signature:} % Testbf{} for Bold
+
+\begingroup
+    \begin{center}
+        \wildcard{\centerline{Touhidul Islam Chayan} \\ \centerline{17101362}} % "centerline{}" to center line
+        \hspace{2cm} % "hspace{}" for Blank Horizontal space
+        \wildcard{\centerline{Anita Islam} \\ \centerline{17301021} }
+        \wildcard{\centerline{Anika Rahman Tonny} \\ \centerline{18101569} }
+        \hspace{2cm}
+        \wildcard{\centerline{Eftykhar Rahman \\} \\ \centerline{18301041} }
+    \end{center}
+
+\endgroup
+
+
+\pagebreak
+
+
+
+
+

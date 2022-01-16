@@ -1,0 +1,134 @@
+\documentclass[Times,12pt,oneside,openany,print,index]{report}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes} % Provides advanced facilities for in-line and display quotations
+\usepackage{amsmath} % TO use mathematical equations 
+\pagestyle{plain} % Just a plain page number. For more http://www.emerson.emory.edu/services/latex/latex_129.html
+
+\usepackage{graphicx} % to use the graphicx package
+\graphicspath{/images} % Path to Image files 
+\usepackage{caption} % To use caption with figure and images
+\usepackage{array} % The array environment is used to make a table of information, with column alignment (left, center, or right) and optional vertical lines separating the columns
+
+\usepackage[nottoc]{tocbibind} % The tocbibind package can be used to add the ToC and/or bibliography and/or the index etc., to the Table of Contents listing
+
+\usepackage[normalem]{ulem} % The ulem package provides various types of underlining that can stretch between words and be broken across lines.
+
+\usepackage{hyperref} % Provides LaTeX the ability to create hyperlinks within the document.
+\usepackage[document]{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+    citecolor=black,
+}
+\urlstyle{same}
+
+\setlength{\parindent}{0em} % To control Indentation of paragraphs 
+
+\usepackage{nomencl} % The nomenclature package can be used to generate and format a nomenclature using MakeIndex.
+\renewcommand{\nompreamble}{The next list describes several symbols \& abbreviation that will be later used within the body of the document}
+\makenomenclature
+
+\usepackage[backend=biber,style=ieee,sorting=ynt]{biblatex} % for more plz click https://www.overleaf.com/learn/latex/Biblatex_citation_styles
+\addbibresource{bibliography/references.bib} % Imports bibliography file
+
+\let\cleardoublepage=\clearpage % removes unwanted doublepages
+
+\begin{document}
+
+\thispagestyle{empty} % removes page number from title page
+\input{core/titlepage} % Add title page
+\cleardoublepage
+
+\pagenumbering{roman} % Roman numbers to be use all pages before Chapter 1
+
+%*******************************************************************
+% TOC = Table of Contents
+% The hyperref makes Title page No. 1 entry in the TOC
+% In order to properly link  all section in TOC "phantomsection" command used
+%  see below link for details on "addcontentsline"
+% http://www.emerson.emory.edu/services/latex/latex_162.html
+% "input" command to add files
+% "Ethics Statement" & "Dedication" page are Optional; you may omit this two page if you want
+% Please do not change the order of listings in TOC
+%*******************************************************************
+\phantomsection
+\addcontentsline{toc}{chapter}{Declaration}
+\input{core/declaration}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Approval}
+\input{core/approval}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Ethics Statement}
+\input{core/ethics_statement}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+\input{core/abstract}
+
+% \phantomsection
+% \addcontentsline{toc}{chapter}{Dedication}
+% \input{core/dedication}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Acknowledgment}
+\input{core/acknowledgement}
+
+\renewcommand{\contentsname}{Table of Contents} % Rename TOC name from Contents to Table of Contents
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Table of Contents} % Add Table of Contents in TOC
+\tableofcontents % To  generation of the Table of Contents
+
+\listoffigures % To  generation of the List of Figure
+\listoftables % To  generation of the Tables of Figure
+
+\printnomenclature % TO  generation of the Nomenclature file
+\addcontentsline{toc}{chapter}{Nomenclature}
+\cleardoublepage
+
+\pagenumbering{arabic} % To use page number 1,2,3 ..
+
+\chapter{Introduction}
+\input{chapters/chapter_1.tex}
+
+\chapter{Background}
+\input{chapters/chapter_2.tex}
+
+\chapter{Literature Review}
+\input{chapters/chapter_3.tex}
+
+\chapter{Proposed Model}
+\input{chapters/chapter_4.tex}
+
+\chapter{Implementation}
+\input{chapters/chapter_5.tex}
+
+\chapter{Conclusion}
+\input{chapters/chapter_6.tex}
+
+\input{chapters/bibliography.tex}
+
+\phantomsection
+\printbibliography % Where the bibliography will be printed
+\addcontentsline{toc}{chapter}{Bibliography}
+
+% ********************************** Appendices ********************************
+%\begin{appendices} % Using appendices environment for more functionality
+% \newpage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{Appendix A How to install \LaTeX}
+% \input{appendix/appendix_1}
+
+% \newpage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{Appendix B Overleaf: GitHub for \LaTeX\ projects}
+% \input{appendix/appendix_2}
+%\end{appendices}
+
+\end{document}
