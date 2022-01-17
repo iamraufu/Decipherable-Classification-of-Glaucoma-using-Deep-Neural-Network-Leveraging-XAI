@@ -11,12 +11,16 @@
 \usepackage{caption} % To use caption with figure and images
 \usepackage{array} % The array environment is used to make a table of information, with column alignment (left, center, or right) and optional vertical lines separating the columns
 
+\usepackage[pdftex]{hyperref}
+
+
 \usepackage[nottoc]{tocbibind} % The tocbibind package can be used to add the ToC and/or bibliography and/or the index etc., to the Table of Contents listing
 
 \usepackage[normalem]{ulem} % The ulem package provides various types of underlining that can stretch between words and be broken across lines.
 
 \usepackage{hyperref} % Provides LaTeX the ability to create hyperlinks within the document.
 \usepackage[document]{ragged2e}
+\usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
@@ -32,13 +36,13 @@
 \renewcommand{\nompreamble}{The next list describes several symbols \& abbreviation that will be later used within the body of the document}
 \makenomenclature
 
+
 \usepackage[backend=biber,style=ieee,sorting=ynt]{biblatex} % for more plz click https://www.overleaf.com/learn/latex/Biblatex_citation_styles
 \addbibresource{bibliography/references.bib} % Imports bibliography file
 
 \let\cleardoublepage=\clearpage % removes unwanted doublepages
-
 \begin{document}
-
+\justifying
 \thispagestyle{empty} % removes page number from title page
 \input{core/titlepage} % Add title page
 \cleardoublepage

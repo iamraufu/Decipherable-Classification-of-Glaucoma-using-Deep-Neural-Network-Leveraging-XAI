@@ -4,15 +4,15 @@
 Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge. While traditional machine learning algorithms are linear, deep learning algorithms are stacked in a hierarchy of increasing complexity and abstraction [23].
 
 \vspace{5mm}
-Neural Networks are basically made-up of several units which work mimicking the human brain's neurons. Each neuron is connected to another one in order to generate a particular problem to solve. These neurons in AI are called units.
+\noindent Neural Networks are basically made-up of several units which work mimicking the human brain's neurons. Each neuron is connected to another one in order to generate a particular problem to solve. These neurons in AI are called units.
 
 \vspace{5mm}
-The input layer is the very first neuron of an Artificial brain. It takes raw data from the dataset and passes it to the next-level neurons. And the layer which produces the final output is called the output layer. These input and output layers may contain N number of units. Output layers units may depend on the output layer classes. In-between these two layers, there can be N numbers of hidden layers, each containing its own weights and biases so that it can calculate its next neuron's journey. The given weight of the connection is multiplied to its corresponding input and then added up resulting in a weighted sum, on which the activation function implies and produces the activation for that neuron, which is indeed the output of the neuron denoted by y. Then, an activation function will get triggered as an output for this y.
+\noindent The input layer is the very first neuron of an Artificial brain. It takes raw data from the dataset and passes it to the next-level neurons. And the layer which produces the final output is called the output layer. These input and output layers may contain N number of units. Output layers units may depend on the output layer classes. In-between these two layers, there can be N numbers of hidden layers, each containing its own weights and biases so that it can calculate its next neuron's journey. The given weight of the connection is multiplied to its corresponding input and then added up resulting in a weighted sum, on which the activation function implies and produces the activation for that neuron, which is indeed the output of the neuron denoted by y. Then, an activation function will get triggered as an output for this y.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.25]{images/fig-4.png}
+\includegraphics[scale=0.3]{images/fig-4.png}
 \caption{Hidden Layer Between Input and Output Layers}
 \label{fig:x Hidden Layer Between Input and Output Layers}
 \end{figure}
@@ -28,7 +28,7 @@ As our data are mostly direct fundus images from LAG-Dataset[24]. CNN is being u
 \label{fig:x Sample Data form LAG-Dataset}
 \end{figure}
 
-This dataset contains 4250 images for \textbf{training}, 302 images for testing and 302 images for \textbf{validation}. All of these folders have two folders for glaucoma and non-glaucoma. The label for “glaucoma” is 1 and for “non-glaucoma” is 0.
+\noindent This dataset contains 4250 images for \textbf{training}, 302 images for testing and 302 images for \textbf{validation}. All of these folders have two folders for glaucoma and non-glaucoma. The label for “glaucoma” is 1 and for “non-glaucoma” is 0.
 
 \vspace{5mm}
 \begin{table}[htbp]
@@ -39,10 +39,10 @@ This dataset contains 4250 images for \textbf{training}, 302 images for testing 
 % \label{fig:x Distribution of data with labels }
 \end{table}
 
-In this study, we are going to use the \textbf{python} programming language. It is a high level OOP programming language that has a lot of amazing Machine learning libraries.
+\noindent In this study, we are going to use the \textbf{python} programming language. It is a high level OOP programming language that has a lot of amazing Machine learning libraries.
 
 \vspace{5mm}
-For this research we are using :
+\noindent For this research we are using :
 
 \begin{itemize}
     \item IDE (Google Colab & Jupyter Notebook)
@@ -50,31 +50,31 @@ For this research we are using :
 \end{itemize}
 
 \newpage
-Some of the Libraries that we are going to use are :
+\noindent Some of the Libraries that we are going to use are :
 
 \vspace{5mm}
-\textbf{TensorFlow}: TensorFlow is an end-to-end open-source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and communities [17].
+\noindent \textbf{TensorFlow}: TensorFlow is an end-to-end open-source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and communities [17].
 
 \vspace{5mm}
-\textbf{Keras}: Keras is the high-level API of TensorFlow 2: an approachable, highly-productive interface for solving machine learning problems [18]
+\noindent \textbf{Keras}: Keras is the high-level API of TensorFlow 2: an approachable, highly-productive interface for solving machine learning problems [18]
 
 \vspace{5mm}
-\textbf{Matplotlib}: Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.[25]
+\noindent \textbf{Matplotlib}: Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.[25]
 
 \vspace{5mm}
-\textbf{Pandas}: Pandas is an open-source, BSD-licensed library providing high-performance, easy-to-use data structures, and data analysis tools for Python programming [26]
+\noindent \textbf{Pandas}: Pandas is an open-source, BSD-licensed library providing high-performance, easy-to-use data structures, and data analysis tools for Python programming [26]
 
 \vspace{5mm}
-\textbf{Numpy}: NumPy offers comprehensive mathematical functions, random number generators, linear algebra routines, Fourier transforms, and more [19]
+\noindent \textbf{Numpy}: NumPy offers comprehensive mathematical functions, random number generators, linear algebra routines, Fourier transforms, and more [19]
 
 \vspace{5mm}
-\textbf{Scikit-Learning}: Simple and efficient tools for predictive data analysis · Accessible to everybody, and reusable in various contexts · Built on NumPy, SciPy, and matplotlib [27]
+\noindent \textbf{Scikit-Learning}: Simple and efficient tools for predictive data analysis · Accessible to everybody, and reusable in various contexts · Built on NumPy, SciPy, and matplotlib [27]
  
 \section{Architecture of the Proposed Model}
 In deep learning, a convolutional neural network (CNN, or ConvNet) is a class of artificial neural networks, most commonly applied to analyze visual imagery[20].
 
 \vspace{5mm}
-In this study, a Transfer Learning approach is proposed. The data set's size and features provide a perfect environment for implementing a transfer learning approach, allowing a pre-trained CNN with all of its weights to be utilized to develop a new transfer learning model specialized to identifying Glaucoma with a high degree of accuracy.
+\noindent In this study, a Transfer Learning approach is proposed. The data set's size and features provide a perfect environment for implementing a transfer learning approach, allowing a pre-trained CNN with all of its weights to be utilized to develop a new transfer learning model specialized to identifying Glaucoma with a high degree of accuracy.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -85,10 +85,10 @@ In this study, a Transfer Learning approach is proposed. The data set's size and
 \end{figure}
 
 \vspace{5mm}
-We are going with the Fine-Tuning approach of Transfer Learning.
+\noindent We are going with the Fine-Tuning approach of Transfer Learning.
 
 \vspace{5mm}
-The CNN Models we are using are:
+\noindent The CNN Models we are using are:
 
 \begin{itemize}
     \item VGG-16
@@ -102,10 +102,10 @@ The CNN Models we are using are:
 With 16-19 layers of weights and small convolution filters of (33), the VGG[29] Convolutional Neural Network built by Visual Geometry Group, the University of Oxford has achieved amazing results. ReLU non-linearly is used here for hidden layers.
 
 \vspace{5mm}
-Here, we used the Keras implementation of the VGG16 model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. We used the “ReLU” activation function for the layers. For predictions, we used the “Softmax” activation function. 
+\noindent Here, we used the Keras implementation of the VGG16 model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. We used the “ReLU” activation function for the layers. For predictions, we used the “Softmax” activation function. 
 
 \vspace{5mm}
-In figure 5.4 we can visualize the architecture of the VGG-16  model.
+\noindent In figure 5.4 we can visualize the architecture of the VGG-16  model.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -116,7 +116,7 @@ In figure 5.4 we can visualize the architecture of the VGG-16  model.
 \end{figure}
 
 \vspace{5mm}
-In figure 5.5 we can visualize the architecture of the VGG-16  model.
+\noindent In figure 5.5 we can visualize the architecture of the VGG-16  model.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -130,7 +130,7 @@ In figure 5.5 we can visualize the architecture of the VGG-16  model.
 The Inception [30] architecture is made up of several inception modules stacked on top of each other to form a deep neural network, where the inception modules provide the ability to operate them all in parallel and concatenate their outputs into a single output vector for input to the module afterward. 
 
 \vspace{5mm}
-Here we used Keras implementation of inceptionV3 model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. We used the “ReLU” activation function for the layers. For predictions, we used the “Softmax” activation function.
+\noindent Here we used Keras implementation of inceptionV3 model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. We used the “ReLU” activation function for the layers. For predictions, we used the “Softmax” activation function.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -141,7 +141,7 @@ Here we used Keras implementation of inceptionV3 model. We used the weights lear
 \end{figure}
 
 \vspace{5mm}
-In our proposed transfer learning model, we use InceptionV3, a new form of the inception architecture. Table 5.2 depicts the InceptionV3 network architecture. Each module's output size is the next module's input size. 
+\noindent In our proposed transfer learning model, we use InceptionV3, a new form of the inception architecture. Table 5.2 depicts the InceptionV3 network architecture. Each module's output size is the next module's input size. 
 
 \begin{table}[hbt!]
 \centering
@@ -182,7 +182,7 @@ softmax & classifier & 1 ×1 × 1000\\
 )}
 \end{table}
 
-In figure 5.7 we can visualize our model summary of InceptionV3.
+\noindent In figure 5.7 we can visualize our model summary of InceptionV3.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -196,10 +196,10 @@ In figure 5.7 we can visualize our model summary of InceptionV3.
 VGG19 is a variant of the VGG model which in short consists of 19 layers (16 convolution layers, 3 fully connected layers, 5 MaxPool layers, and 1 SoftMax layer). [32] VGG19 has 19.6 billion Flops.
 
 \vspace{5mm}
-Here, we used the Keras implementation of the VGG19 model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. Then we performed batch normalization. We used a dropout rate of 0.5. We used the “ReLU” activation function for the layers.
+\noindent Here, we used the Keras implementation of the VGG19 model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. Then we performed batch normalization. We used a dropout rate of 0.5. We used the “ReLU” activation function for the layers.
 
 \vspace{5mm}
-For predictions, we used the “Softmax” activation function. For the Gradient Descent, we used the Adam optimizer with a learning rate of \(10^-5\). In Figure 5.8, Our model summary for VGG-19 is given.
+\noindent For predictions, we used the “Softmax” activation function. For the Gradient Descent, we used the Adam optimizer with a learning rate of \(10^-5\). In Figure 5.8, Our model summary for VGG-19 is given.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -221,7 +221,7 @@ For predictions, we used the “Softmax” activation function. For the Gradient
 ResNet50 is a version of the ResNet model which has 48 convolution layers and 1 MaxPool layer and 1 average pool layer. Moreover, it has 3.8 x \(10^9\) floating-point operations. ResNet50 plays an important role in the computer vision and deep learning world. It is mainly used for image recognition and is most commonly applied for analyzing visual imagery. Also, it is a pre-trained Deep Learning model for image classification of the Convolutional Neural Network (CNN). ResNet50 is mainly trained on a million images of 1000 categories from the ImageNet database and there are over 23 million trained parameters which will make it more suitable for image recognition. ResNet50 is deeper than any other network using residual connections.
 
 \vspace{5mm}
-Here, we used the Keras implementation of the ResNet50 Model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. Then we performed batch normalization. We used a dropout rate of 0.5. We used the “ReLU” activation function for the layers. Again we performed batch normalization and used a dropout rate of 0.5. For predictions, we used the “Softmax” activation function. 
+\noindent Here, we used the Keras implementation of the ResNet50 Model. We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. First, we flattened the model outputs. Then we performed batch normalization. We used a dropout rate of 0.5. We used the “ReLU” activation function for the layers. Again we performed batch normalization and used a dropout rate of 0.5. For predictions, we used the “Softmax” activation function. 
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -235,12 +235,12 @@ Here, we used the Keras implementation of the ResNet50 Model. We used the weight
 Dense Convolutional Network which is DenseNet is an architecture that spotlights on making the profound learning networks go considerably more profound, and yet making them more proficient to prepare, by utilizing more limited associations between the layers [33]. DenseNet is very much like ResNet for certain key distinctions. For instance, ResNet utilizes an added substance strategy that combines the preceding layer with the future layer, while DenseNet links the result of the preceding layer with the future layer. This is done to empower the greatest data stream between the layers of the organization.
 
 \vspace{5mm}
-Here, we used the Keras implementation of the DenseNet121 model . We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. We performed  the 2D Global Average Pooling. Then we performed batch normalization. We used a dropout rate of 0.5. We used the “ReLU” activation function for the layers and again performed batch normalization and used a dropout rate of 0.5. For predictions, we used the “Softmax” activation function.
+\noindent Here, we used the Keras implementation of the DenseNet121 model . We used the weights learned from the ImageNet dataset. We didn’t use the 3 fully connected layers at the top of the network. Input shape of the images is 224 x 224 and there are 3 channels. We performed  the 2D Global Average Pooling. Then we performed batch normalization. We used a dropout rate of 0.5. We used the “ReLU” activation function for the layers and again performed batch normalization and used a dropout rate of 0.5. For predictions, we used the “Softmax” activation function.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=1]{images/fig-15.png}
+\includegraphics[scale=0.5]{images/fig-15.png}
 \caption{Model Summary of DenseNet121}
 \label{fig:x Model Summary of DenseNet121}
 \end{figure}
@@ -251,7 +251,7 @@ Fine-tuning is the process of fine-tuning or changing a model that has already b
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/Fine-tuning by keeping the feature extractor_s final layers trainable.png}
+\includegraphics[scale=0.4]{images/Fine-tuning by keeping the feature extractor_s final layers trainable.png}
 \caption{Fine-tuning by keeping the feature extractor's final layers trainable}
 \label{fig:x Fine-tuning by keeping the feature extractor's final layers trainable}
 \end{figure}
@@ -276,7 +276,7 @@ The architecture of Convolutional Neural Networks is basically 3 types of layers
 \label{fig:x CNN Classifier}
 \end{figure}
 
-And basically, all these layers do these operations as bellow:
+\noindent And basically, all these layers do these operations as bellow:
 
 \vspace{5mm}
 \begin{itemize}
@@ -306,7 +306,7 @@ The convolutional layers, which are the fundamental building blocks of CNN, are 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/planes shown are a feature map.png}
+\includegraphics[scale=0.4]{images/planes shown are a feature map.png}
 \caption{Planes shown are a feature map}
 \label{fig:x Planes shown are a feature map}
 \end{figure}
@@ -362,15 +362,15 @@ In a neural network, fully connected layers are those where all of the inputs fr
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/Fully Connected CNN classifying between classes.png}
+\includegraphics[scale=0.45]{images/Fully Connected CNN classifying between classes.png}
 \caption{Fully Connected CNN classifying between classes}
 \label{fig:x Fully Connected CNN classifying between classes}
 \end{figure}
 
-Fully connected layers or in other words dense layers take nonlinear activation functions, however, the final output layer of the fully connected layers take Softmax activation.
+\noindent Fully connected layers or in other words dense layers take nonlinear activation functions, however, the final output layer of the fully connected layers take Softmax activation.
 
 \vspace{5mm}
-We are also going to use sigmoid and ReLU in both VGG-16 and InceptionV3.
+\noindent We are also going to use sigmoid and ReLU in both VGG-16 and InceptionV3.
 
 \vspace{5mm}
 \subsection{Batch Normalization}
@@ -382,12 +382,12 @@ While feeding input to Neural Networks, we do Batch Normalization because it mak
 \subsection{Dropout}
 
 \vspace{5mm}
-Adulteration of training information misleadingly regulates to overfit through dropout and other characteristical noise systems. Dropout holds out a kind of versatile regularization for summed up straight models [38]. Moreover, Dropout is a normal stochastic choice strategy in view of the neural organization [39]. This has the effect of making the layer look and be treated as a layer with a particular measure of hubs and availability to the past layer. Essentially, a particular perspective on the designed layer is directed with each update to a layer during preparing ...
+Adulteration of training information misleadingly regulates to overfit through dropout and other characteristical noise systems. Dropout holds out a kind of versatile regularization for summed up straight models [38]. Moreover, Dropout is a normal stochastic choice strategy in view of the neural organization [39]. This has the effect of making the layer look and be treated as a layer with a particular measure of hubs and availability to the past layer. Essentially, a particular perspective on the designed layer is directed with each update to a layer during preparing.
 
 \section{Analysis}
 We have used VGG-16, VGG-19, DenseNet121, InceptionV3 and ResNet50 models for our study. Every model was compiled with Adam optimizer with the learning rate of 1e-5 in 50 epochs. 
 
-These are the score(validation accuracy) our models - 
+\noindent These are the score(validation accuracy) our models - 
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -397,14 +397,14 @@ These are the score(validation accuracy) our models -
 \label{fig:x Fully Connected CNN classifying between classes.}
 \end{figure}
 
-After 50 epochs, RestNet50 got the highest score among the other models with a validation accuracy of 94.7\%.
+\noindent After 50 epochs, RestNet50 got the highest score among the other models with a validation accuracy of 94.7\%.
 
 \vspace{5mm}
-These are the Train and Test accuracy and loss graph for each model.
+\noindent These are the Train and Test accuracy and loss graph for each model.
 
 \newpage
 \vspace{5mm}
-Model Accuracy and Loss of VGG-16 -
+\noindent Model Accuracy and Loss of VGG-16 -
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -423,7 +423,7 @@ Model Accuracy and Loss of VGG-16 -
 \end{figure}
 
 \newpage
-Model Accuracy and Loss of VGG-19 -
+\noindent Model Accuracy and Loss of VGG-19 -
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -443,7 +443,7 @@ Model Accuracy and Loss of VGG-19 -
 
 \newpage
 \vspace{5mm}
-Model Accuracy and Loss of ResNet50 -
+\noindent Model Accuracy and Loss of ResNet50 -
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
@@ -462,7 +462,7 @@ Model Accuracy and Loss of ResNet50 -
 
 \newpage
 \vspace{5mm}
-Model Accuracy and Loss of DenseNet121 -
+\noindent Model Accuracy and Loss of DenseNet121 -
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
@@ -481,7 +481,7 @@ Model Accuracy and Loss of DenseNet121 -
 
 \newpage
 \vspace{5mm}
-Model Accuracy and Loss of InceptionV3 -
+\noindent Model Accuracy and Loss of InceptionV3 -
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
@@ -498,10 +498,10 @@ Model Accuracy and Loss of InceptionV3 -
 \label{fig:x InceptionV3 Model Train and Test Loss}
 \end{figure}
 
-The shape and dynamics of a learning curve can be used to diagnose the behavior of a machine learning model and in turn perhaps suggest the type of configuration changes that may be made to improve learning and/or performance.
+\noindent The shape and dynamics of a learning curve can be used to diagnose the behavior of a machine learning model and in turn perhaps suggest the type of configuration changes that may be made to improve learning and/or performance.
 
 \vspace{5mm}
-There are three common dynamics that you are likely to observe in learning curves. And they are:
+\noindent There are three common dynamics that you are likely to observe in learning curves. And they are:
 
 \begin{itemize}
     \item Underfit
@@ -509,7 +509,7 @@ There are three common dynamics that you are likely to observe in learning curve
     \item Good Fit
 \end{itemize}
 
-We know that smaller relative scores on the y-axis indicate more or better learning. 
+\noindent We know that smaller relative scores on the y-axis indicate more or better learning. 
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -520,13 +520,13 @@ We know that smaller relative scores on the y-axis indicate more or better learn
 \end{figure}
 
 \vspace{5mm}
-Comparing All models' Accuracy and Loss graph together, we can see that VGG-19 and ResNet50 were the Good-Fit than the other models.
+\noindent Comparing All models' Accuracy and Loss graph together, we can see that VGG-19 and ResNet50 were the Good-Fit than the other models.
 
 \vspace{5mm}
-These are the Train sets, True and Predicted scores of classified and misclassified glaucoma and non-glaucoma results for each model based on the model’s train datasets prediction labels and the actual train labels. We have added a threshold of 0.5 for this train predicted visualization.
+\noindent These are the Train sets, True and Predicted scores of classified and misclassified glaucoma and non-glaucoma results for each model based on the model’s train datasets prediction labels and the actual train labels. We have added a threshold of 0.5 for this train predicted visualization.
 
 \vspace{5mm}
-(the percentages are meaning the predicted train accuracy for the predicted labels calculated with the actual train labels)
+\noindent (the percentages are meaning the predicted train accuracy for the predicted labels calculated with the actual train labels)
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -537,12 +537,13 @@ These are the Train sets, True and Predicted scores of classified and misclassif
 \end{figure}
 
 % \centering
+\begin{center}
 All  151 misclassified samples (93.83\%) 
 
 Glaucoma  74 misclassified samples (93.95\%)
 
 Non-Glaucoma  77 misclassified samples (93.71\%)
-
+\end{center}
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
@@ -552,12 +553,13 @@ Non-Glaucoma  77 misclassified samples (93.71\%)
 \end{figure}
 
 % \centering
+\begin{center}
 All   48 misclassified samples (97.65\%)
 
 Glaucoma  22 misclassified samples (97.84\%)
 
 Non-Glaucoma  26 misclassified samples (97.45\%)
-
+\end{center}
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
@@ -568,13 +570,13 @@ Non-Glaucoma  26 misclassified samples (97.45\%)
 
 \newpage
 % \centering
-
+\begin{center}
 All   47 misclassified samples (98.08\%)
 
 Glaucoma  20 misclassified samples (98.37\%)
 
 Non-Glaucoma  27 misclassified samples (97.79\%)
-
+\end{center}
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
@@ -582,13 +584,13 @@ Non-Glaucoma  27 misclassified samples (97.79\%)
 \caption{True and Predicted Train scores of VGG-19}
 \label{fig:x True and Predicted Train scores of VGG-19}
 \end{figure}
-
+\begin{center}
 All   17 misclassified samples (99.31\%)
 
 Glaucoma  14 misclassified samples (98.86\%)
 
 Non-Glaucoma   3 misclassified samples (99.75\%)
-
+\end{center}
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
@@ -598,48 +600,59 @@ Non-Glaucoma   3 misclassified samples (99.75\%)
 \end{figure}
 
 \newpage
-
+\begin{center}
 All    0 misclassified samples (100.00\%)
 
 Glaucoma   0 misclassified samples (100.00\%)
 
 Non-Glaucoma   0 misclassified samples (100.00\%)
-
+\end{center}
 \vspace{5mm}
 Now, We have called the same function that we have used for the above Train predicted labels again with the same threshold of 0.5. But for now we have used the validation datasets prediction labels. And the results were - 
 
-(the percentages are meaning the predicted test/validation accuracy for the predicted labels calculated with the actual test/validation labels)
+\noindent \textit{(the percentages are meaning the predicted test/validation accuracy for the predicted labels calculated with the actual test/validation labels)}
 
+\noindent \textit{( Here, G = Glaucoma and n-G = Non-Glaucoma )}
+
+\begin{center}
 \begin{table}[hbt!]
-% \centering
-\begin{tabular}{|c | c | c| c |}
+\centering
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|c|}\toprule
 \hline
-Model & All misclassified & Glaucoma misclassified & Non-Glaucoma misclassified\\
-\hline
-DenseNet121 & 9 (86.76\%) & 4 (88.24\%) &  5 (85.29\%)\\
-\hline
-InceptionV3 & 24 (85.88\%) & 16 (81.18\%) & 8 (90.59\%)\\
-\hline
-VGG-16 & 8 (88.24\%) & 7 (79.41\%) & 1 (97.06\%)\\
-\hline
-VGG-19 & 4 (94.12\%) & 3 (91.18\%) & 1 (97.06\%)\\
-\hline
-ResNet50 & 3 (95.59\%) & 1 (97.06\%) & 2 (94.12\%)\\
-\hline
+% \parbox{\centering \textbf{Model}} & \parbox{\centering \textbf{All misclassified}} & \parbox{\centering \textbf{G misclassified}} & \parbox{\centering \textbf{n-G misclassified}} \\
 
+\centering{\textbf{Model} & \centering\textbf{All misclassified} & \centering\textbf{G misclassified} & \textbf{n-G misclassified}} \\
+\hline
+\centering DenseNet121 & \centering 9 (86.76\%) & \centering 4 (88.24\%) & 5 (85.29\%)\\
+\hline
+\centering InceptionV3 & \centering 24 (85.88\%) & \centering 16 (81.18\%) & 8 (90.59\%)\\
+\hline
+\centering VGG-16 & \centering 8 (88.24\%) & \centering 7 (79.41\%) & 1 (97.06\%)\\
+\hline
+\centering VGG-19 & \centering 4 (94.12\%) & \centering 3 (91.18\%) & 1 (97.06\%)\\
+\hline
+\centering ResNet50 & \centering 3 (95.59\%) & \centering 1 (97.06\%) & 2 (94.12\%)\\
+\hline
+\bottomrule
 \end{tabular}
 \caption{True and Predicted Test scores of all Model}
 \label{tab:True and Predicted Test scores of all Model}
 \end{table}
+\end{center}
+
+
 
 \vspace{5mm}
-Now we have taken a single predicted batch from each model’s prediction with the 0.5 threshold and plotted the misclassified glaucoma and non-glaucoma images, which we will use in Lime (XAI framework) to explain later.
+\noindent Now we have taken a single predicted batch from each model’s prediction with the 0.5 threshold and plotted the misclassified glaucoma and non-glaucoma images, which we will use in Lime (XAI framework) to explain later.
 
+\noindent \textit{( Here, G = Glaucoma and n-G = Non-Glaucoma )}
+\begin{center}
 \begin{table}[hbt!]
-% \centering
+\centering
 \begin{tabular}{|c | c | c| c |}
 \hline
-Model & Batch & Glaucoma misclassified & Non-Glaucoma misclassified\\
+\textbf{Model} & \textbf{Batch} & \textbf{G misclassified} & \textbf{n-G misclassified}}\\
+
 \hline
 DenseNet121 & 2 (32 in each) & 3 &  5\\
 \hline
@@ -656,27 +669,27 @@ ResNet50 & 2 (32 in each) & 0 & 3\\
 \caption{True and Predicted Test scores of all Model}
 \label{tab:True and Predicted Test scores of all Model}
 \end{table}
-
+\end{center}
 \newpage
 \vspace{5mm}
-These are some of the misclassified images for all models with and undoing the existing preprocessing. Basically the model’s preprocessing for these images ruined their actual color and contrast.  Which led the model to predict wrong. By undoing the existing preprocessing we can see that for DesneNet121 the images got a little reddish and for other models, It got bluish.
+\noindent These are some of the misclassified images for all models with and undoing the existing preprocessing. Basically the model’s preprocessing for these images ruined their actual color and contrast.  Which led the model to predict wrong. By undoing the existing preprocessing we can see that for DesneNet121 the images got a little reddish and for other models, It got bluish.
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-41.png}
-\caption{True and Predicted Train scores of ResNet50}
+\includegraphics[scale=0.42]{images/fig-41.png}
+\caption{Misclassified images for all models with and without preprocessing}
 \label{fig:x True and Predicted Train scores of ResNet50}
 \end{figure}
 
 \vspace{5mm}
-Now we will show the explanation for these preprocessed and misclassified images using an XAI[40] framework, \textbf{LIME}. Then we will apply Lime again on a single predicted raw fundus -image directly from the test dataset (labelled) directory to see the difference between a correctly predicted fundus image[42] and wrong predicted fundus image.
-Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in DenseNet121 -
+\noindent Now we will show the explanation for these preprocessed and misclassified images using an XAI[40] framework, \textbf{LIME}. Then we will apply Lime again on a single predicted raw fundus -image directly from the test dataset (labelled) directory to see the difference between a correctly predicted fundus image[42] and wrong predicted fundus image.
+Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in DenseNet121
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-42.png}
+\includegraphics[scale=0.45]{images/fig-42.png}
 \caption{Misclassified image with preprocessing and Superpixels focused area by Lime in DenseNet121}
 \label{fig:x Misclassified image with preprocessing and Superpixels focused area by Lime in DenseNet121}
 \end{figure}
@@ -684,19 +697,19 @@ Given below are the the misclassified image with preprocessing, Superpixels focu
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-43.png}
+\includegraphics[scale=0.45]{images/fig-43.png}
 \caption{Lime Explanation for DenseNet121}
 \label{fig:x Lime Explanation for DenseNet121}
 \end{figure}
 
 \newpage
 \vspace{5mm}
-Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in InceptionV3 -
+\noindent Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in InceptionV3 -
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-44.png}
+\includegraphics[scale=0.45]{images/fig-44.png}
 \caption{Misclassified image with preprocessing and Superpixels focused area by Lime in InceptionV3
 }
 \label{fig:x Misclassified image with preprocessing and Superpixels focused area by Lime in InceptionV3
@@ -706,19 +719,19 @@ Given below are the the misclassified image with preprocessing, Superpixels focu
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-45.png}
+\includegraphics[scale=0.45]{images/fig-45.png}
 \caption{Lime Explanation for InceptionV3}
 \label{fig:x Lime Explanation for InceptionV3}
 \end{figure}
 
 \newpage
 \vspace{5mm}
-Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in VGG-16 -
+\noindent Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in VGG-16 -
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-46.png}
+\includegraphics[scale=0.45]{images/fig-46.png}
 \caption{Misclassified image with preprocessing and Superpixels focused area by Lime in VGG-16}
 \label{fig:x Misclassified image with preprocessing and Superpixels focused area by Lime in VGG-16}
 \end{figure}
@@ -726,19 +739,19 @@ Given below are the the misclassified image with preprocessing, Superpixels focu
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-47.png}
+\includegraphics[scale=0.45]{images/fig-47.png}
 \caption{Lime Explanation for VGG-16}
 \label{fig:x Lime Explanation for VGG-16}
 \end{figure}
 
 \newpage
 \vspace{5mm}
-Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in VGG-19 -
+\noindent Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in VGG-19 -
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-48.png}
+\includegraphics[scale=0.45]{images/fig-48.png}
 \caption{Misclassified image with preprocessing and Superpixels focused area by Lime in VGG-19}
 \label{fig:x Misclassified image with preprocessing and Superpixels focused area by Lime in VGG-19}
 \end{figure}
@@ -746,19 +759,19 @@ Given below are the the misclassified image with preprocessing, Superpixels focu
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-49.png}
+\includegraphics[scale=0.45]{images/fig-49.png}
 \caption{Lime Explanation for VGG-19}
 \label{fig:x Lime Explanation for VGG-19}
 \end{figure}
 
 \newpage
 \vspace{5mm}
-Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in ResNet50 -
+\noindent Given below are the the misclassified image with preprocessing, Superpixels focused area and the model prediction explanation by Lime in ResNet50 -
 
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-50.png}
+\includegraphics[scale=0.45]{images/fig-50.png}
 \caption{Misclassified image with preprocessing and Superpixels focused area by Lime in ResNet50}
 \label{fig:x Misclassified image with preprocessing and Superpixels focused area by Lime in ResNet50}
 \end{figure}
@@ -766,7 +779,7 @@ Given below are the the misclassified image with preprocessing, Superpixels focu
 \vspace{5mm}
 \begin{figure}[hbt!]
 \centering
-\includegraphics[scale=0.5]{images/fig-51.png}
+\includegraphics[scale=0.45]{images/fig-51.png}
 \caption{Lime Explanation for ResNet50}
 \label{fig:x Lime Explanation for ResNet50}
 \end{figure}
@@ -787,7 +800,7 @@ Now for the single predicted raw fundus image -
 \section{Result}
 These are the single image predictions of all models - 
 
-\textit{( here outputs are given in [n,m] format, where “m” means glaucoma score and “n” means non-glaucoma score )}
+\noindent\textit{( here outputs are given in [n,m] format, where “m” means glaucoma score and “n” means non-glaucoma score )}
 
 \vspace{5mm}
 \begin{figure}[hbt!]
@@ -799,7 +812,7 @@ These are the single image predictions of all models -
 
 \newpage
 \vspace{5mm}
-\textit{These are batch (50 images/batch) image predictions of all models - ( here [1,0] means glaucoma and [0,1] means non-glaucoma )}
+\noindent\textit{These are batch (50 images/batch) image predictions of all models - ( here [1,0] means glaucoma and [0,1] means non-glaucoma )}
 
 
 \vspace{5mm}
@@ -820,7 +833,7 @@ These are the single image predictions of all models -
 
 \newpage
 \vspace{5mm}
-\textit{These are batch (50 images/batch) image predictions of all models - ( here [1,0] means glaucoma and [0,1] means non-glaucoma )}
+\noindent\textit{These are batch (50 images/batch) image predictions of all models - ( here [1,0] means glaucoma and [0,1] means non-glaucoma )}
 
 \vspace{5mm}
 \begin{figure}[hbt!]
